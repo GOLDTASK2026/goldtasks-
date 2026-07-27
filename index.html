@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>GoldTasks</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldTasks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <h1>GoldTasks</h1>
+    <header>
+        <h1>GoldTasks</h1>
+        <p>Earn rewards by completing tasks</p>
+    </header>
 
-  <div class="dashboard">
-    <h2>Welcome</h2>
-    <p>Balance: ₦0</p>
-<h2 id="balance">₦0</h2>
-  <button onclick="watchAd()">Watch Ad</button>
-<button onclick="dailyReward()">Daily Rewards</button>
-<button onclick="withdraw()">Withdraw</button>
-  </div>
+    <main>
 
-  <script src="script.js"></script>
+        <div class="balance-card">
+            <h2>Your Balance</h2>
+            <h1 id="balance">₦0</h1>
+        </div>
+
+        <div class="buttons">
+            <button onclick="watchAd()">Watch Ad</button>
+            <button onclick="dailyReward()">Daily Reward</button>
+            <button onclick="completeTask()">Complete Task</button>
+            <button onclick="referral()">Referral Link</button>
+        </div>
+
+        <div class="tasks">
+            <h2>Available Tasks</h2>
+            <p>Complete tasks to earn rewards.</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
